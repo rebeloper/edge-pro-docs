@@ -17,10 +17,12 @@ EdgePro is a set of 9 Claude Code skills for deeper learning and review, sold as
 After purchase you'll receive a license key by email. Run:
 
 ```bash
-bash <(curl -fsSL https://edge-api-v2.rebeloper.workers.dev/edge-pro-installer.sh) --key <your-license-key>
+bash <(curl -fsSL https://edge-api-v2.rebeloper.workers.dev/edge-pro-installer.sh)
 ```
 
-This installs all 9 skills into `~/.claude/skills/`.
+Paste your license key when prompted. This installs all 9 skills into `~/.claude/skills/`.
+
+Avoid passing the key as `--key <key>` on the command line — it can end up in your shell history. (The flag still works if you need it in a non-interactive/scripted context, e.g. `--key <your-license-key>`.)
 
 ## Update
 
